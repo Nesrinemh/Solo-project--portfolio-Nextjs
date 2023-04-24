@@ -53,7 +53,7 @@ export default function Home() {
               Frontend Developer.
             </h3>
             <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto'>
-              Hello! I'm a web developer focused on building beautiful
+              Hello! Im a web developer focused on building beautiful
               interfaces & experiences. Previously, I have done
               various jobs such as perfumery saleswoman, esthetician
               or tramway driver! All this professional experience
