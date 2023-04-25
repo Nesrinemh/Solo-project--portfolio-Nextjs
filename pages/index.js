@@ -15,6 +15,8 @@ import web3 from '../public/web3.png';
 import web4 from '../public/web4.png';
 import web5 from '../public/web5.png';
 import web6 from '../public/web6.png';
+import projet1 from '../public/projet1.png';
+import projet2 from '../public/projet2.png';
 
 export default function Home() {
   return (
@@ -164,7 +166,7 @@ export default function Home() {
           <div className='flex flex-col gap-10 lg:flex-row lg:flex-wrap '>
             <div className='basis-1/3 flex-1'>
               <Image
-                src={web1}
+                src={projet1}
                 className='rounded-lg  object-cover '
                 width={'100%'}
                 height={'100%'}
@@ -173,7 +175,7 @@ export default function Home() {
             </div>
             <div className='basis-1/3 flex-1'>
               <Image
-                src={web2}
+                src={projet2}
                 className='rounded-lg object-cover '
                 width={'100%'}
                 height={'100%'}
