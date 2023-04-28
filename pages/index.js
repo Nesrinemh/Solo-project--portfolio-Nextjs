@@ -165,35 +165,39 @@ export default function Home() {
               Some Things I’ve Built
             </h3>
           </div>
-          <div className='flex flex-col gap-10 lg:flex-row lg:flex-wrap '>
-            <div className='basis-1/3 flex-1'>
+          <div className='flex flex-col cursor-pointer gap-10 lg:flex-row lg:flex-wrap '>
+            <div
+              onClick={() => {
+                setOpenProjet1(true),
+                  setDescription(
+                    'This project of movies API was made with Next.JS 13 & Tailwind CSS. You can click on view project to test or cancel.'
+                  );
+              }}
+              className='basis-1/3 flex-1'
+            >
               <Image
                 src={projet1}
                 className='rounded-lg cursor-pointer  object-cover '
                 width={'100%'}
                 height={'100%'}
                 layout='responsive'
-                onClick={() => {
-                  setOpenProjet1(true),
-                    setDescription(
-                      'This project of movies API was made with Next.JS 13 & Tailwind CSS. You can click on view project to test or cancel.'
-                    );
-                }}
               />
             </div>
-            <div className='basis-1/3 flex-1'>
+            <div
+              onClick={() => {
+                setOpenProjet1(true),
+                  setDescription(
+                    ' You can click on view project to test or cancel.'
+                  );
+              }}
+              className='basis-1/3 cursor-pointer flex-1'
+            >
               <Image
                 src={projet2}
                 className='rounded-lg object-cover '
                 width={'100%'}
                 height={'100%'}
                 layout='responsive'
-                onClick={() => {
-                  setOpenProjet1(true),
-                    setDescription(
-                      'This project of movies API was made with Next.JS 13 & Tailwind CSS. You can click on view project to test or cancel.'
-                    );
-                }}
               />
             </div>
             <div className='basis-1/3 flex-1'>
