@@ -1,3 +1,4 @@
+import { Fragment, useRef, useState } from 'react';
 import Head from 'next/head';
 import {
   AiFillTwitterCircle,
@@ -9,16 +10,18 @@ import deved from '../public/Hey.png';
 import design from '../public/design.png';
 import code from '../public/code.png';
 import consulting from '../public/consulting.png';
-import web1 from '../public/web1.png';
-import web2 from '../public/web2.png';
 import web3 from '../public/web3.png';
 import web4 from '../public/web4.png';
 import web5 from '../public/web5.png';
 import web6 from '../public/web6.png';
 import projet1 from '../public/projet1.png';
 import projet2 from '../public/projet2.png';
+import ModalProjet1 from '../Components/ModalProjet1';
 
 export default function Home() {
+  const [openProjet1, setOpenProjet1] = useState(false);
+  const [description, setDescription] = useState(null);
+
   return (
     <div>
       <Head>
@@ -30,6 +33,12 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
+      <ModalProjet1
+        openProjet1={openProjet1}
+        setOpenProjet1={setOpenProjet1}
+        description={description}
+        setDescription={setDescription}
+      />
       <main className='bg-white px-10  md:px-20 lg:px-40'>
         <section className=' min-h-screen'>
           <nav className='py-10 mb-12 flex justify-between'>
@@ -127,9 +136,7 @@ export default function Home() {
               <p className='py-2'>
                 Using latest technologies to create
               </p>
-              <h4 className='py-4 text-teal-600'>
-                Design tools I use
-              </h4>
+              <h4 className='py-4  text-shamrock'>Techno I use</h4>
               <p className='text-gray-800 py-1'>Javascript</p>
               <p className='text-gray-800 py-1'>React</p>
               <p className='text-gray-800 py-1'>Next.js</p>
@@ -139,38 +146,39 @@ export default function Home() {
                 <Image src={consulting} width={100} height={100} />
               </div>
               <h3 className='text-lg font-medium pt-8 pb-2'>
-                Beautiful Designs
+                Dev environment
               </h3>
               <p className='py-2'>
-                Creating elegant designs suited for your needs design
-                theory.
+                Tools that allow me to optimize my work and
+                collaborate.
               </p>
-              <h4 className='py-4 text-teal-600'>
-                Design tools I use
-              </h4>
+              <h4 className='py-4  text-shamrock'>Daily tools</h4>
               <p className='text-gray-800 py-1'>Github</p>
               <p className='text-gray-800 py-1'>Vercel</p>
-              <p className='text-gray-800 py-1'>VisualStudio Code</p>
+              <p className='text-gray-800 py-1'>VS Code</p>
             </div>
           </div>
         </section>
         <section>
           <div>
-            <h3 className='text-3xl py-1'>Some Things I’ve Built</h3>
-
-            <p className='text-md py-2 leading-8 text-gray-800'>
-              Mollit id id enim pariatur occaecat pariatur
-              exercitation elit laboris quis.
-            </p>
+            <h3 className='text-3xl py-1 mb-8'>
+              Some Things I’ve Built
+            </h3>
           </div>
           <div className='flex flex-col gap-10 lg:flex-row lg:flex-wrap '>
             <div className='basis-1/3 flex-1'>
               <Image
                 src={projet1}
-                className='rounded-lg  object-cover '
+                className='rounded-lg cursor-pointer  object-cover '
                 width={'100%'}
                 height={'100%'}
                 layout='responsive'
+                onClick={() => {
+                  setOpenProjet1(true),
+                    setDescription(
+                      'This project of movies API was made with Next.JS 13 & Tailwind CSS. You can click on view project to test or cancel.'
+                    );
+                }}
               />
             </div>
             <div className='basis-1/3 flex-1'>
@@ -180,6 +188,12 @@ export default function Home() {
                 width={'100%'}
                 height={'100%'}
                 layout='responsive'
+                onClick={() => {
+                  setOpenProjet1(true),
+                    setDescription(
+                      'This project of movies API was made with Next.JS 13 & Tailwind CSS. You can click on view project to test or cancel.'
+                    );
+                }}
               />
             </div>
             <div className='basis-1/3 flex-1'>
