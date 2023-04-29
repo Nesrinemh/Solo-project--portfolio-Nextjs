@@ -96,21 +96,22 @@ export default function Home() {
         <section>
           <div>
             <h3 className='text-3xl py-3'>Skills</h3>
-            <p className='text-md leading-8 text-gray-800'>
-              <p className='text-md leading-8 text-gray-80'>
-                Here are in a few words the skills I acquired during
-                my last training with{' '}
-                <span className='text-shamrock'>
-                  Scrimba Bootcamp{' '}
-                </span>{' '}
-                as well as other skills where I am currently training.
-              </p>
+            <p className='text-md leading-8 text-gray-80'>
+              Here are in a few words the skills I acquired during my
+              last training with{' '}
+              <span className='text-shamrock'>Scrimba Bootcamp </span>{' '}
+              as well as other skills where I am currently training.
             </p>
           </div>
           <div className='lg:flex gap-10'>
             <div className='text-center    shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
               <div className='flex justify-center'>
-                <Image src={design} width={100} height={100} />
+                <Image
+                  alt='img'
+                  src={design}
+                  width={100}
+                  height={100}
+                />
               </div>
               <h3 className='text-lg font-medium pt-8 pb-2'>
                 Beautiful Designs
@@ -128,7 +129,12 @@ export default function Home() {
             </div>
             <div className='text-center    shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
               <div className='flex justify-center'>
-                <Image src={code} width={100} height={100} />
+                <Image
+                  src={code}
+                  width={100}
+                  height={100}
+                  alt='img'
+                />
               </div>
               <h3 className='text-lg font-medium pt-8 pb-2'>
                 Technologies
@@ -143,7 +149,13 @@ export default function Home() {
             </div>
             <div className='text-center    shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
               <div className='flex justify-center'>
-                <Image src={consulting} width={100} height={100} />
+                <Image
+                  src={consulting}
+                  width={100}
+                  height={100}
+                  alt='img'
+                  priority
+                />
               </div>
               <h3 className='text-lg font-medium pt-8 pb-2'>
                 Dev environment
@@ -177,10 +189,10 @@ export default function Home() {
             >
               <Image
                 src={projet1}
+                alt={projet1}
                 className='rounded-lg cursor-pointer  object-cover '
                 width={'100%'}
                 height={'100%'}
-                layout='responsive'
               />
             </div>
             <div
@@ -197,7 +209,7 @@ export default function Home() {
                 className='rounded-lg object-cover '
                 width={'100%'}
                 height={'100%'}
-                layout='responsive'
+                alt={projet2}
               />
             </div>
             <div className='basis-1/3 flex-1'>
@@ -206,7 +218,7 @@ export default function Home() {
                 className='rounded-lg object-cover '
                 width={'100%'}
                 height={'100%'}
-                layout='responsive'
+                alt={'projet'}
               />
             </div>
             <div className='basis-1/3 flex-1'>
@@ -215,7 +227,7 @@ export default function Home() {
                 className='rounded-lg object-cover '
                 width={'100%'}
                 height={'100%'}
-                layout='responsive'
+                alt={'projet'}
               />
             </div>
             <div className='basis-1/3 flex-1'>
@@ -224,7 +236,7 @@ export default function Home() {
                 className='rounded-lg  object-cover'
                 width={'100%'}
                 height={'100%'}
-                layout='responsive'
+                alt={'projet'}
               />
             </div>
             <div className='basis-1/3 flex-1'>
@@ -233,7 +245,7 @@ export default function Home() {
                 className='rounded-lg  object-cover'
                 width={'100%'}
                 height={'100%'}
-                layout='responsive'
+                alt={'projet'}
               />
             </div>
           </div>
