@@ -1,4 +1,3 @@
-import { Fragment, useRef, useState } from 'react';
 import Head from 'next/head';
 import {
   AiFillTwitterCircle,
@@ -10,18 +9,10 @@ import deved from '../public/Hey.png';
 import design from '../public/design.png';
 import code from '../public/code.png';
 import consulting from '../public/consulting.png';
-import web3 from '../public/web3.png';
-import web4 from '../public/web4.png';
-import web5 from '../public/web5.png';
-import web6 from '../public/web6.png';
 import projet1 from '../public/projet1.png';
 import projet2 from '../public/projet2.png';
-import ModalProjet1 from '../Components/ModalProjet1';
 
 export default function Home() {
-  const [openProjet1, setOpenProjet1] = useState(false);
-  const [description, setDescription] = useState(null);
-
   return (
     <div>
       <Head>
@@ -33,21 +24,15 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <ModalProjet1
-        openProjet1={openProjet1}
-        setOpenProjet1={setOpenProjet1}
-        description={description}
-        setDescription={setDescription}
-      />
       <main className='bg-white px-10  md:px-20 lg:px-40'>
         <section className=' min-h-screen'>
           <nav className='py-10 mb-12 flex justify-between'>
-            <h1 className='text-xl font-burtons text-shamrock'>
-              Portfolio
-            </h1>
+            <h1 className='text-l  text-shamrock'>Portfolio 2023</h1>
             <ul className=' flex items-center'>
               <li>
                 <a
+                  target='_blank'
+                  rel='noreferrer'
                   className='bg-gradient-to-r from-asparagus to-shamrock text-white px-4 py-2 rounded ml-8'
                   href='https://drive.google.com/file/d/1JyooTWCPqLeONpptUgc75yAhcN-IyY6-/view?usp=share_link'
                 >
@@ -173,20 +158,12 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className='text-3xl py-1 mb-8'>
+            <h3 className='text-3xl py-4 mb-8'>
               Some Things I’ve Built
             </h3>
           </div>
           <div className='flex flex-col cursor-pointer gap-10 lg:flex-row lg:flex-wrap '>
-            <div
-              onClick={() => {
-                setOpenProjet1(true),
-                  setDescription(
-                    'This project of movies API was made with Next.JS 13 & Tailwind CSS. You can click on view project to test or cancel.'
-                  );
-              }}
-              className='basis-1/3 flex-1'
-            >
+            <div className='basis-1/3 flex-1'>
               <Image
                 src={projet1}
                 alt={projet1}
@@ -194,16 +171,31 @@ export default function Home() {
                 width={'100%'}
                 height={'100%'}
               />
+
+              <div className='flex justify-between p-8'>
+                <div className='flex'>
+                  <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded  dark:text-red-600 border border-red-400'>
+                    API Movie
+                  </p>
+                  <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:text-red-600 border border-red-400'>
+                    Next.js
+                  </p>
+                  <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:text-red-600 border border-red-400'>
+                    Tailwind CSS
+                  </p>
+                </div>
+
+                <a
+                  target='_blank'
+                  rel='noreferrer'
+                  href='https://api-movie-two.vercel.app/'
+                  className='bg-ecru hover:bg-red-500 text-white font-semibold px-4 rounded-full'
+                >
+                  View
+                </a>
+              </div>
             </div>
-            <div
-              onClick={() => {
-                setOpenProjet1(true),
-                  setDescription(
-                    ' You can click on view project to test or cancel.'
-                  );
-              }}
-              className='basis-1/3 cursor-pointer flex-1'
-            >
+            <div className='basis-1/3 cursor-pointer flex-1'>
               <Image
                 src={projet2}
                 className='rounded-lg object-cover '
@@ -211,43 +203,30 @@ export default function Home() {
                 height={'100%'}
                 alt={projet2}
               />
+              <div className='flex justify-between p-8'>
+                <div className='flex'>
+                  <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded  dark:text-red-600 border border-red-400'>
+                    React
+                  </p>
+                  <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:text-red-600 border border-red-400'>
+                    Git
+                  </p>
+                  <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:text-red-600 border border-red-400'>
+                    Vercel
+                  </p>
+                </div>
+
+                <a
+                  target='_blank'
+                  rel='noreferrer'
+                  href='https://tasktracker-iota.vercel.app/'
+                  className='bg-ecru hover:bg-red-500 text-white font-semibold px-4 rounded-full'
+                >
+                  View
+                </a>
+              </div>
             </div>
-            <div className='basis-1/3 flex-1'>
-              <Image
-                src={web3}
-                className='rounded-lg object-cover '
-                width={'100%'}
-                height={'100%'}
-                alt={'projet'}
-              />
-            </div>
-            <div className='basis-1/3 flex-1'>
-              <Image
-                src={web4}
-                className='rounded-lg object-cover '
-                width={'100%'}
-                height={'100%'}
-                alt={'projet'}
-              />
-            </div>
-            <div className='basis-1/3 flex-1'>
-              <Image
-                src={web5}
-                className='rounded-lg  object-cover'
-                width={'100%'}
-                height={'100%'}
-                alt={'projet'}
-              />
-            </div>
-            <div className='basis-1/3 flex-1'>
-              <Image
-                src={web6}
-                className='rounded-lg  object-cover'
-                width={'100%'}
-                height={'100%'}
-                alt={'projet'}
-              />
-            </div>
+            <div className='basis-1/3 flex-1'></div>
           </div>
         </section>
       </main>
