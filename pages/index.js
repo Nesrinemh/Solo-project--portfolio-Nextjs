@@ -162,12 +162,12 @@ export default function Home() {
               Some Things I’ve Built
             </h3>
           </div>
-          <div className='flex flex-col cursor-pointer gap-10 lg:flex-row lg:flex-wrap '>
+          <div className='flex flex-col  gap-10 lg:flex-row lg:flex-wrap '>
             <div className='basis-1/3 flex-1'>
               <Image
                 src={projet1}
                 alt={projet1}
-                className='rounded-lg cursor-pointer  object-cover '
+                className='rounded-lg   object-cover '
                 width={'100%'}
                 height={'100%'}
               />
@@ -189,13 +189,13 @@ export default function Home() {
                   target='_blank'
                   rel='noreferrer'
                   href='https://api-movie-two.vercel.app/'
-                  className='bg-ecru hover:bg-red-500 text-white font-semibold px-4 rounded-full'
+                  className='bg-shamrock hover:bg-red-500 text-white font-semibold px-4 rounded-full cursor-pointer'
                 >
                   View
                 </a>
               </div>
             </div>
-            <div className='basis-1/3 cursor-pointer flex-1'>
+            <div className='basis-1/3  flex-1'>
               <Image
                 src={projet2}
                 className='rounded-lg object-cover '
@@ -220,7 +220,7 @@ export default function Home() {
                   target='_blank'
                   rel='noreferrer'
                   href='https://tasktracker-iota.vercel.app/'
-                  className='bg-ecru hover:bg-red-500 text-white font-semibold px-4 rounded-full'
+                  className='bg-shamrock hover:bg-red-500 text-white font-semibold px-4 rounded-full cursor-pointer'
                 >
                   View
                 </a>
