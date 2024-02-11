@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import ToggleButton from '../components/ToggleButton.jsx';
 import { FaXTwitter } from 'react-icons/fa6';
-import { CgDarkMode } from 'react-icons/cg';
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import Image from 'next/image';
 import deved from '../public/Hey.png';
