@@ -3,7 +3,7 @@ import ToggleButton from '../components/ToggleButton.jsx';
 import { FaXTwitter } from 'react-icons/fa6';
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import Image from 'next/image';
-import deved from '../public/Hey.png';
+import profileimg from '../public/Design sans titre.png';
 import design from '../public/design.png';
 import code from '../public/code.png';
 import consulting from '../public/consulting.png';
@@ -70,8 +70,8 @@ export default function Home() {
               <AiFillGithub />
             </a>
           </div>
-          <div className='relative mx-auto bg-gradient-to-b from-indian rounded-full w-80 h-80 mt-20 overflow-hidden  md:h-96 md:w-96'>
-            <Image src={deved} fill alt='profil' />
+          <div className='relative mx-auto bg-gradient-to-b from-ecru rounded-full w-80 h-80 mt-20 overflow-hidden  md:h-96 md:w-96'>
+            <Image src={profileimg} fill alt='profil' />
           </div>
         </section>
         <section>
