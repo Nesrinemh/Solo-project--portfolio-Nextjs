@@ -43,7 +43,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className='text-center p-10 py-10'>
-            <h2 className=' text-5xl py-2 text-indian font-medium md:text-6xl'>
+            <h2 className=' text-5xl py-2 text-[#b08968] font-medium md:text-6xl'>
               Nesrine Hadboun
             </h2>
             <h3 className='text-2xl py-2 md:text-3xl'>
