@@ -167,38 +167,6 @@ export default function Home() {
             </h3>
           </div>
           <div className='flex flex-col  gap-10 lg:flex-row lg:flex-wrap '>
-            <div className='basis-1/3 flex-1'>
-              <Image
-                src={projet1}
-                alt={projet1}
-                className='rounded-lg   object-cover '
-                width={'100%'}
-                height={'100%'}
-              />
-
-              <div className='flex justify-between p-8'>
-                <div className='flex'>
-                  <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded  dark:text-red-600 border border-red-400'>
-                    API Movie
-                  </p>
-                  <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:text-red-600 border border-red-400'>
-                    Next.js
-                  </p>
-                  <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:text-red-600 border border-red-400'>
-                    Tailwind CSS
-                  </p>
-                </div>
-
-                <a
-                  target='_blank'
-                  rel='noreferrer'
-                  href='https://api-movie-two.vercel.app/'
-                  className='bg-shamrock hover:bg-red-500 text-white font-semibold px-4 rounded-full cursor-pointer'
-                >
-                  View
-                </a>
-              </div>
-            </div>
             <div className='basis-1/3  flex-1'>
               <Image
                 src={projet2}
