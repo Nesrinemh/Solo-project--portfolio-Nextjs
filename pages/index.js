@@ -12,6 +12,7 @@ import projet2 from '../public/projet2.png';
 import projet3 from '../public/projet3.png';
 import projet4 from '../public/projet4.png';
 import projet5 from '../public/projet5.png';
+import resume from '../public/CV_Frontend_HADBOUN_Nesrine.pdf';
 
 export default function Home() {
   return (
@@ -35,7 +36,7 @@ export default function Home() {
                   target='_blank'
                   rel='noreferrer'
                   className='bg-gradient-to-r from-asparagus to-shamrock text-white px-4 py-2 rounded ml-8'
-                  href='https://drive.google.com/file/d/1aUuD2hDym_C8i0I51zsVaOtJn2ZJvTFp/view?usp=drive_link'
+                  href={resume}
                 >
                   Resume
                 </a>
@@ -272,6 +273,38 @@ export default function Home() {
                   target='_blank'
                   rel='noreferrer'
                   href='https://dynamic-kitten-a71626.netlify.app/'
+                  className='bg-shamrock hover:bg-red-500 text-white font-semibold px-4 rounded-full cursor-pointer'
+                >
+                  View
+                </a>
+              </div>
+            </div>
+            <div className='basis-1/3 flex-1'>
+              <Image
+                src={projet5}
+                alt={projet5}
+                className='rounded-lg   object-cover '
+                width={'100%'}
+                height={'100%'}
+              />
+
+              <div className='flex justify-between p-8'>
+                <div className='flex'>
+                  <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded  dark:text-red-600 border border-red-400'>
+                    React
+                  </p>
+                  <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:text-red-600 border border-red-400'>
+                    Tailwind
+                  </p>
+                  <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:text-red-600 border border-red-400'>
+                    API
+                  </p>
+                </div>
+
+                <a
+                  target='_blank'
+                  rel='noreferrer'
+                  href='https://hinder-hyperisland.netlify.app/'
                   className='bg-shamrock hover:bg-red-500 text-white font-semibold px-4 rounded-full cursor-pointer'
                 >
                   View
