@@ -181,7 +181,6 @@ export default function Home() {
                     React
                   </p>
                 </div>
-
                 <a
                   target='_blank'
                   rel='noreferrer'
