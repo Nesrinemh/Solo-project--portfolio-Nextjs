@@ -12,6 +12,7 @@ import projet2 from '../public/projet2.png';
 import projet3 from '../public/projet3.png';
 import projet4 from '../public/projet4.png';
 import projet5 from '../public/projet5.png';
+import projet6 from '../public/projet6.png';
 
 export default function Home() {
   return (
@@ -312,8 +313,8 @@ export default function Home() {
             </div>
             <div className='basis-1/3 flex-1'>
               <Image
-                src={projet5}
-                alt={projet5}
+                src={projet6}
+                alt={projet6}
                 className='rounded-lg   object-cover '
                 width={'100%'}
                 height={'100%'}
@@ -335,7 +336,7 @@ export default function Home() {
                 <a
                   target='_blank'
                   rel='noreferrer'
-                  href='https://hinder-hyperisland.netlify.app/'
+                  href='https://hyper-island-petfinder.vercel.app/'
                   className='bg-shamrock hover:bg-red-500 text-white font-semibold px-4 rounded-full cursor-pointer'
                 >
                   View
