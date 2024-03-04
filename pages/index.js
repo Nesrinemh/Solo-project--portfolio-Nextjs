@@ -7,7 +7,6 @@ import profileimg from '../public/Design sans titre.png';
 import design from '../public/design.png';
 import code from '../public/code.png';
 import consulting from '../public/consulting.png';
-import projet1 from '../public/projet1.png';
 import projet2 from '../public/projet2.png';
 import projet3 from '../public/projet3.png';
 import projet4 from '../public/projet4.png';
@@ -175,6 +174,7 @@ export default function Home() {
                 height={'100%'}
                 alt={projet2}
               />
+              <p> Description of the project </p>
               <div className='flex justify-between p-8'>
                 <div className='flex'>
                   <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded  dark:text-red-600 border border-red-400'>
@@ -200,7 +200,7 @@ export default function Home() {
                 width={'100%'}
                 height={'100%'}
               />
-
+              <p> Description of the project </p>
               <div className='flex justify-between p-8'>
                 <div className='flex'>
                   <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded  dark:text-red-600 border border-red-400'>
@@ -226,7 +226,7 @@ export default function Home() {
                 width={'100%'}
                 height={'100%'}
               />
-
+              <p> Description of the project </p>
               <div className='flex justify-between p-8'>
                 <div className='flex'>
                   <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded  dark:text-red-600 border border-red-400'>
@@ -255,7 +255,7 @@ export default function Home() {
                 width={'100%'}
                 height={'100%'}
               />
-
+              <p> Description of the project </p>
               <div className='flex justify-between p-8'>
                 <div className='flex'>
                   <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded  dark:text-red-600 border border-red-400'>
@@ -287,7 +287,7 @@ export default function Home() {
                 width={'100%'}
                 height={'100%'}
               />
-
+              <p> Description of the project </p>
               <div className='flex justify-between p-8'>
                 <div className='flex'>
                   <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded  dark:text-red-600 border border-red-400'>
