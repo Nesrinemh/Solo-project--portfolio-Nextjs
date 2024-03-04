@@ -296,11 +296,7 @@ export default function Home() {
                   <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:text-red-600 border border-red-400'>
                     Tailwind
                   </p>
-                  <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:text-red-600 border border-red-400'>
-                    API
-                  </p>
                 </div>
-
                 <a
                   target='_blank'
                   rel='noreferrer'
