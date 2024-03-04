@@ -12,7 +12,6 @@ import projet2 from '../public/projet2.png';
 import projet3 from '../public/projet3.png';
 import projet4 from '../public/projet4.png';
 import projet5 from '../public/projet5.png';
-import resume from '../public/CV_Frontend_HADBOUN_Nesrine.pdf';
 
 export default function Home() {
   return (
@@ -36,7 +35,7 @@ export default function Home() {
                   target='_blank'
                   rel='noreferrer'
                   className='bg-gradient-to-r from-asparagus to-shamrock text-white px-4 py-2 rounded ml-8'
-                  href={resume}
+                  href='https://drive.google.com/file/d/1SE1M1ssHfj4W-vv0j4Gzmrs1O3MLKCEm/view'
                 >
                   Resume
                 </a>
