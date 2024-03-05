@@ -35,7 +35,7 @@ export default function Home() {
                   target='_blank'
                   rel='noreferrer'
                   className='bg-gradient-to-r from-asparagus to-shamrock text-white px-4 py-2 rounded ml-8'
-                  href='https://drive.google.com/file/d/1SE1M1ssHfj4W-vv0j4Gzmrs1O3MLKCEm/view'
+                  href='https://drive.google.com/file/d/11pN_38_nR_itGVq7RDXNWqOdVk6sP7yO/view'
                 >
                   Resume
                 </a>
