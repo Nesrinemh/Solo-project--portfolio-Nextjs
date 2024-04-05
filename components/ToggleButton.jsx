@@ -13,7 +13,7 @@ const Button = () => {
       onClick={() =>
         theme == 'dark' ? setTheme('light') : setTheme('dark')
       }
-      className='bg-[#a39171] text-white px-4 py-2 rounded ml-8'
+      className='bg-[#F87667] text-white px-4 py-2 rounded ml-8'
     >
       {theme === 'dark' ? <MdOutlineLightMode /> : <MdDarkMode />}
     </button>
