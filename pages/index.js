@@ -9,6 +9,12 @@ import project2 from '../public/project2.png';
 import project3 from '../public/project3.png';
 import project4 from '../public/project4.png';
 import project5 from '../public/project5.png';
+import Skills from '../components/Skills.jsx';
+import DesignIcon from '../components/DesignIcon.jsx';
+import TechnoIcon from '../components/TechnoIcon.jsx';
+import DevEnvIcon from '../components/DevEnvIcon.jsx';
+import Project from '../components/Project.jsx';
+import { MdJavascript } from 'react-icons/md';
 
 export default function Home() {
   return (
@@ -30,7 +36,7 @@ export default function Home() {
                 <a
                   target='_blank'
                   rel='noreferrer'
-                  className='bg-[#F87667] text-white px-4 py-2 rounded ml-8'
+                  className='bg-ecru text-white px-4 py-2 rounded ml-8'
                   href='https://drive.google.com/file/d/12_88leRtKCyY_BbKIIAogkgh8mkKL1Gl/view'
                 >
                   Resume
@@ -38,7 +44,7 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className='flex items-center justify-center border-[#F87667] p-6 rounded-md text-gray-800 '>
+          <div className='flex items-center justify-center border-ecru border p-6 rounded-md text-gray-800 '>
             <div>
               <div className='text-center p-10 py-10 '>
                 <h2 className=' text-5xl py-2 text-[#b08968] font-medium md:text-6xl'>
@@ -57,10 +63,10 @@ export default function Home() {
                   creativity through my work.
                 </p>
                 <p>
-                  If you would love to work with me, please ✉️
+                  If you would love to work with me, please
                   <a
                     href='mailto:nesrine.hadboun@live.fr'
-                    className='bg-[#F87667] text-white px-4 py-2 rounded'
+                    className='text-gray-800 border border-ecru px-2 ml-1 py-2 rounded'
                   >
                     Get in touch
                   </a>
@@ -88,7 +94,7 @@ export default function Home() {
             <h3 className='text-3xl font-bold py-3 uppercase tracking-wide'>
               skills
             </h3>
-            <p className='text-lg leading-8 text-gray-80'>
+            <p className='text-lg leading-8 text-gray-800'>
               Below, you will see some of my skills learned and used
               in my last training at the{' '}
               <span className='text-[#7f5539] '>
@@ -102,54 +108,28 @@ export default function Home() {
               .
             </p>
           </div>
-          <div className='lg:flex gap-10'>
-            <div className='text-center border-[#F87667] shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
-              <div className='flex justify-center '></div>
-              <h3 className='text-lg font-medium pt-8 pb-2  text-gray-800'>
-                Beautiful Designs
-              </h3>
-              <p className='py-2 text-gray-800'>
-                Creating elegant designs suited for your needs design
-                theory.
-              </p>
-              <h4 className='py-4 text-[#a39171] uppercase font-bold '>
-                Design tools I use
-              </h4>
-              <p className='text-gray-800 py-1'>CSS</p>
-              <p className='text-gray-800 py-1'>Tailwind</p>
-              <p className='text-gray-800 py-1'>Figma</p>
-            </div>
-            <div className='text-center border-[#F87667] shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
-              <div className='flex justify-center'></div>
-              <h3 className='text-lg font-medium pt-8 pb-2 text-gray-800'>
-                Technologies
-              </h3>
-              <p className='py-2 text-gray-800'>
-                Using latest technologies to create
-              </p>
-              <h4 className='py-4 text-[#a39171] uppercase font-bold'>
-                Techno I use
-              </h4>
-              <p className='text-gray-800 py-1'>HTML / CSS</p>
-              <p className='text-gray-800 py-1'>Javascript</p>
-              <p className='text-gray-800 py-1'>React</p>
-            </div>
-            <div className='text-center border-[#F87667] shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
-              <div className='flex justify-center'></div>
-              <h3 className='text-gray-800 text-lg font-medium pt-8 pb-2'>
-                Dev environment
-              </h3>
-              <p className='py-2 text-gray-800'>
-                Tools that allow me to optimize my work and
-                collaborate.
-              </p>
-              <h4 className='py-4  text-[#a39171] uppercase font-bold'>
-                Daily tools
-              </h4>
-              <p className='text-gray-800 py-1'>Git / Github</p>
-              <p className='text-gray-800 py-1'>Vercel / Netlify</p>
-              <p className='text-gray-800 py-1'>VS Code</p>
-            </div>
+          <div class='grid grid-cols-3 gap-8 p-8 md:p-16 '>
+            <Skills
+              svg={<DesignIcon />}
+              title={'Design'}
+              tool1={'Tailwind / Bootstrap'}
+              tool2={'Responsive Design'}
+              tool3={'UX/UI learns'}
+            />
+            <Skills
+              svg={<TechnoIcon />}
+              title={'Technologies'}
+              tool1={'HTML / CSS'}
+              tool2={'Javascript / React'}
+              tool3={'Node.js / Express.js'}
+            />
+            <Skills
+              svg={<DevEnvIcon />}
+              title={'Devlopment Environment'}
+              tool1={'Git / Github'}
+              tool2={'Vercel / Netlify'}
+              tool3={'VS code'}
+            />
           </div>
         </section>
         <section>
@@ -158,188 +138,52 @@ export default function Home() {
               Some projects I’ve Built
             </h3>
           </div>
-          <div className='flex flex-col  gap-10 lg:flex-row lg:flex-wrap border-[#F87667] p-10 mb-10 rounded-md'>
-            <div className='basis-1/3  flex-1'>
-              <p className='uppercase font-bold mb-2 text-gray-800'>
-                Todo List
-              </p>
-              <Image
-                src={project1}
-                className='rounded-lg object-cover '
-                width={'100%'}
-                height={'100%'}
-                alt={project1}
-              />
-              <p className='p-4 text-gray-800'>
-                {' '}
-                Fullstack Todo List App Using React, Express.js,
-                PostgreSQL.{' '}
-              </p>
-              <div className='flex justify-between p-8'>
-                <div className='flex items-center'>
-                  <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded  dark:text-red-600 border border-red-400'>
-                    React
-                  </p>
-                  <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded  dark:text-red-600 border border-red-400'>
-                    Express.js
-                  </p>
-                  <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded  dark:text-red-600 border border-red-400'>
-                    PostgreSQL
-                  </p>
-                </div>
-                <a
-                  target='_blank'
-                  rel='noreferrer'
-                  href='https://todolist-fullstack-asng.vercel.app/'
-                  className='bg-[#a39171] hover:bg-[#090806] text-white font-semibold px-4 py-2 rounded-md cursor-pointer'
-                >
-                  View
-                </a>
-              </div>
-            </div>
-            <div className='basis-1/3 flex-1'>
-              <p className='uppercase font-bold mb-2 text-gray-800'>
-                tic tac toe
-              </p>
-              <Image
-                src={project2}
-                alt={project2}
-                className='rounded-lg   object-cover '
-                width={'100%'}
-                height={'100%'}
-              />
-              <p className='p-4 text-gray-800'>
-                React documentation tutoriel. Fundamental to building
-                any React app, deep understanding of React:
-                components, hooks, props...
-              </p>
-              <div className='flex justify-between p-8'>
-                <div className='flex items-center'>
-                  <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded  dark:text-red-600 border border-red-400'>
-                    React
-                  </p>
-                </div>
-                <a
-                  target='_blank'
-                  rel='noreferrer'
-                  href='https://remarkable-dolphin-1f4414.netlify.app/'
-                  className='bg-[#a39171] hover:bg-[#090806] text-white font-semibold px-4 py-2 rounded-md cursor-pointer'
-                >
-                  View
-                </a>
-              </div>
-            </div>
-            <div className='basis-1/3 flex-1'>
-              <p className='uppercase font-bold mb-2 text-gray-800'>
-                countries quiz
-              </p>
-              <Image
-                src={project4}
-                alt={project4}
-                className='rounded-lg   object-cover '
-                width={'100%'}
-                height={'100%'}
-              />
-              <p className='p-4 text-gray-800'>
-                Group Project (3 students) during Javascript module.
-                We had 3 weeks to build a game using javascipt
-                fundamentals.
-              </p>
-              <div className='flex justify-between p-8'>
-                <div className='flex items-center'>
-                  <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded  dark:text-red-600 border border-red-400'>
-                    Rest Countries API
-                  </p>
-                  <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:text-red-600 border border-red-400'>
-                    Javascript
-                  </p>
-                </div>
-
-                <a
-                  target='_blank'
-                  rel='noreferrer'
-                  href='https://dynamic-kitten-a71626.netlify.app/'
-                  className='bg-[#a39171] hover:bg-[#090806] text-white font-semibold px-4 py-2 rounded-md cursor-pointer'
-                >
-                  View
-                </a>
-              </div>
-            </div>
-            <div className='basis-1/3 flex-1'>
-              <p className='uppercase font-bold mb-2 text-gray-800'>
-                hinder
-              </p>
-              <Image
-                src={project5}
-                alt={project5}
-                className='rounded-lg   object-cover '
-                width={'100%'}
-                height={'100%'}
-              />
-              <p className='p-4 text-gray-800'>
-                Group Project (4 students) during React module. We had
-                2.5 weeks to build an app using React fundamentals. I
-                worked on Login/Logout pages & Matches page.
-              </p>
-              <div className='flex justify-between p-8'>
-                <div className='flex items-center'>
-                  <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded  dark:text-red-600 border border-red-400'>
-                    React
-                  </p>
-                  <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:text-red-600 border border-red-400'>
-                    Tailwind
-                  </p>
-                  <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:text-red-600 border border-red-400'>
-                    API
-                  </p>
-                </div>
-
-                <a
-                  target='_blank'
-                  rel='noreferrer'
-                  href='https://hinder-hyperisland.netlify.app/'
-                  className='bg-[#a39171] hover:bg-[#090806] text-white font-semibold px-4 py-2 rounded-md cursor-pointer'
-                >
-                  View
-                </a>
-              </div>
-            </div>
-            <div className='basis-1/3 flex-1'>
-              <p className='uppercase font-bold mb-2 text-gray-800'>
-                pet finder
-              </p>
-              <Image
-                src={project2}
-                alt={project2}
-                className='rounded-lg   object-cover '
-                width={'100%'}
-                height={'100%'}
-              />
-              <p className='p-4 text-gray-800'>
-                Group Project (4 students) during SEO & accessibility
-                module. We had 2.5 weeks to build an app optimized
-                using SEO tools. I worked on the Header which included
-                the navbar and the hero.
-              </p>
-              <div className='flex justify-between p-8'>
-                <div className='flex items-center'>
-                  <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded  dark:text-red-600 border border-red-400'>
-                    React
-                  </p>
-                  <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:text-red-600 border border-red-400'>
-                    Tailwind
-                  </p>
-                </div>
-                <a
-                  target='_blank'
-                  rel='noreferrer'
-                  href='https://hyper-island-petfinder.vercel.app/'
-                  className='bg-[#a39171] hover:bg-[#090806] text-white font-semibold px-4 py-2 rounded-md cursor-pointer'
-                >
-                  View
-                </a>
-              </div>
-            </div>
+          <div className='flex flex-col  gap-10 lg:flex-row lg:flex-wrap border-ecru border p-10 mb-10 rounded-md'>
+            <Project
+              name={'Todo list'}
+              project={project1}
+              link={'https://todolist-fullstack-asng.vercel.app/'}
+              description={
+                'Group Project (5 students) during Backend module. We had 3 weeks to build a todo app using postegreSQL database. I worked on the backend.'
+              }
+              techno={['React', 'Express.js', 'PostgreSQL']}
+            />
+            <Project
+              name={'countries quiz'}
+              project={project3}
+              link={'https://dynamic-kitten-a71626.netlify.app/'}
+              description={
+                'Group Project (3 students) during Javascript module. We had 3 weeks to build a game using javascipt fundamentals.'
+              }
+              techno={['Javascript', 'Rest Countries API']}
+            />
+            <Project
+              name={'tic tac toe game'}
+              project={project2}
+              link={'https://remarkable-dolphin-1f4414.netlify.app/'}
+              description={
+                'React documentation tutoriel. Fundamental to building any React app, deep understanding of React: components, hooks, props... This project helped me a lot to understand props and state in React.'
+              }
+              techno={['React']}
+            />
+            <Project
+              name={'Hinder: meeting app'}
+              project={project4}
+              link={'https://hinder-hyperisland.netlify.app/'}
+              description={
+                'Group Project (4 students) during React module. We had 2.5 weeks to build an app using React fundamentals. I worked on Login/Logout pages & Matches page.'
+              }
+              techno={['React', 'Tailwind', 'API']}
+            />
+            <Project
+              name={'Pet finder'}
+              project={project5}
+              link={'https://hyper-island-petfinder.vercel.app/'}
+              description={
+                'Group Project (4 students) during SEO & accessibility module. We had 2.5 weeks to build an app optimized using SEO tools. I worked on the Header which included the navbar and the hero.'
+              }
+              techno={['React', 'Tailwind', 'SEO', 'Accessibility']}
+            />
           </div>
         </section>
       </main>
