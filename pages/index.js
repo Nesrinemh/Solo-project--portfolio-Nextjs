@@ -41,7 +41,7 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className='flex items-center justify-center bg-[#f5ebe0] p-6 rounded-md text-gray-800 '>
+          <div className='flex items-center justify-center bg-[#c5c4c3] p-6 rounded-md text-gray-800 '>
             <div>
               <div className='text-center p-10 py-10 '>
                 <h2 className=' text-5xl py-2 text-[#b08968] font-medium md:text-6xl'>
@@ -60,7 +60,7 @@ export default function Home() {
                   creativity through my work.
                 </p>
                 <p>
-                  If you would love to work with me, please{' '}
+                  If you would love to work with me, please ✉️
                   <a
                     href='mailto:nesrine.hadboun@live.fr'
                     className='bg-[#a39171] text-white px-4 py-2 rounded ml-8'
@@ -106,7 +106,7 @@ export default function Home() {
             </p>
           </div>
           <div className='lg:flex gap-10'>
-            <div className='text-center bg-[#f5ebe0] shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
+            <div className='text-center bg-[#c5c4c3] shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
               <div className='flex justify-center '>
                 <Image
                   alt='img'
@@ -129,7 +129,7 @@ export default function Home() {
               <p className='text-gray-800 py-1'>Tailwind</p>
               <p className='text-gray-800 py-1'>Figma</p>
             </div>
-            <div className='text-center bg-[#f5ebe0] shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
+            <div className='text-center bg-[#c5c4c3] shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
               <div className='flex justify-center'>
                 <Image
                   src={code}
@@ -151,7 +151,7 @@ export default function Home() {
               <p className='text-gray-800 py-1'>Javascript</p>
               <p className='text-gray-800 py-1'>React</p>
             </div>
-            <div className='text-center bg-[#f5ebe0]    shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
+            <div className='text-center bg-[#c5c4c3] shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
               <div className='flex justify-center'>
                 <Image
                   src={consulting}
@@ -183,7 +183,7 @@ export default function Home() {
               Some projects I’ve Built
             </h3>
           </div>
-          <div className='flex flex-col  gap-10 lg:flex-row lg:flex-wrap bg-[#f5ebe0] p-10 mb-10 rounded-md'>
+          <div className='flex flex-col  gap-10 lg:flex-row lg:flex-wrap bg-[#c5c4c3] p-10 mb-10 rounded-md'>
             <div className='basis-1/3  flex-1'>
               <p className='uppercase font-bold mb-2 text-gray-800'>
                 Todo List
