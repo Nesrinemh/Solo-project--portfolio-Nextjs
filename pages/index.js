@@ -33,7 +33,7 @@ export default function Home() {
                 <a
                   target='_blank'
                   rel='noreferrer'
-                  className='bg-[#a39171] text-white px-4 py-2 rounded ml-8'
+                  className='bg-[#F87667] text-white px-4 py-2 rounded ml-8'
                   href='https://drive.google.com/file/d/12_88leRtKCyY_BbKIIAogkgh8mkKL1Gl/view'
                 >
                   Resume
@@ -63,7 +63,7 @@ export default function Home() {
                   If you would love to work with me, please ✉️
                   <a
                     href='mailto:nesrine.hadboun@live.fr'
-                    className='bg-[#a39171] text-white px-4 py-2 rounded ml-8'
+                    className='bg-[#F87667] text-white px-4 py-2 rounded'
                   >
                     Get in touch
                   </a>
