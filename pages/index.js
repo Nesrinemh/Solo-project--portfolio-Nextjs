@@ -3,15 +3,12 @@ import ToggleButton from '../components/ToggleButton.jsx';
 import { FaXTwitter } from 'react-icons/fa6';
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import Image from 'next/image';
-import profileimg from '../public/Design sans titre.png';
-import design from '../public/design.png';
-import code from '../public/code.png';
-import consulting from '../public/consulting.png';
-import projet1 from '../public/projet1.png';
-import projet3 from '../public/projet3.png';
-import projet4 from '../public/projet4.png';
-import projet5 from '../public/projet5.png';
-import projet6 from '../public/projet6.png';
+import profileimg from '../public/profilpic.png';
+import project1 from '../public/project1.png';
+import project2 from '../public/project2.png';
+import project3 from '../public/project3.png';
+import project4 from '../public/project4.png';
+import project5 from '../public/project5.png';
 
 export default function Home() {
   return (
@@ -107,14 +104,7 @@ export default function Home() {
           </div>
           <div className='lg:flex gap-10'>
             <div className='text-center border-[#F87667] shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
-              <div className='flex justify-center '>
-                <Image
-                  alt='img'
-                  src={design}
-                  width={100}
-                  height={100}
-                />
-              </div>
+              <div className='flex justify-center '></div>
               <h3 className='text-lg font-medium pt-8 pb-2  text-gray-800'>
                 Beautiful Designs
               </h3>
@@ -130,14 +120,7 @@ export default function Home() {
               <p className='text-gray-800 py-1'>Figma</p>
             </div>
             <div className='text-center border-[#F87667] shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
-              <div className='flex justify-center'>
-                <Image
-                  src={code}
-                  width={100}
-                  height={100}
-                  alt='img'
-                />
-              </div>
+              <div className='flex justify-center'></div>
               <h3 className='text-lg font-medium pt-8 pb-2 text-gray-800'>
                 Technologies
               </h3>
@@ -152,15 +135,7 @@ export default function Home() {
               <p className='text-gray-800 py-1'>React</p>
             </div>
             <div className='text-center border-[#F87667] shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
-              <div className='flex justify-center'>
-                <Image
-                  src={consulting}
-                  width={100}
-                  height={100}
-                  alt='img'
-                  priority
-                />
-              </div>
+              <div className='flex justify-center'></div>
               <h3 className='text-gray-800 text-lg font-medium pt-8 pb-2'>
                 Dev environment
               </h3>
@@ -189,11 +164,11 @@ export default function Home() {
                 Todo List
               </p>
               <Image
-                src={projet1}
+                src={project1}
                 className='rounded-lg object-cover '
                 width={'100%'}
                 height={'100%'}
-                alt={projet1}
+                alt={project1}
               />
               <p className='p-4 text-gray-800'>
                 {' '}
@@ -227,8 +202,8 @@ export default function Home() {
                 tic tac toe
               </p>
               <Image
-                src={projet3}
-                alt={projet3}
+                src={project2}
+                alt={project2}
                 className='rounded-lg   object-cover '
                 width={'100%'}
                 height={'100%'}
@@ -259,8 +234,8 @@ export default function Home() {
                 countries quiz
               </p>
               <Image
-                src={projet4}
-                alt={projet4}
+                src={project4}
+                alt={project4}
                 className='rounded-lg   object-cover '
                 width={'100%'}
                 height={'100%'}
@@ -295,8 +270,8 @@ export default function Home() {
                 hinder
               </p>
               <Image
-                src={projet5}
-                alt={projet5}
+                src={project5}
+                alt={project5}
                 className='rounded-lg   object-cover '
                 width={'100%'}
                 height={'100%'}
@@ -334,8 +309,8 @@ export default function Home() {
                 pet finder
               </p>
               <Image
-                src={projet6}
-                alt={projet6}
+                src={project2}
+                alt={project2}
                 className='rounded-lg   object-cover '
                 width={'100%'}
                 height={'100%'}
