@@ -52,15 +52,17 @@ export default function Home() {
                 </h3>
                 <p className='text-md py-5 leading-8  md:text-xl max-w-lg mx-auto'>
                   Hello! I am from France and I have lived in Sweden
-                  since 2022 with my family. Im a web developer
-                  focused on building beautiful interfaces &
-                  experiences. Previously, I have done various jobs
-                  such as perfumery saleswoman, spa manager or tramway
-                  driver! All this professional experiences allowed me
-                  to forge myself and to find today a job that really
-                  motivates me!
+                  since 2022 with my family. Previously, I have done
+                  various jobs such as perfumery saleswoman, spa
+                  manager or tramway driver! With my previous
+                  background, I have decided to transition into
+                  frontend development and I am excited to show my
+                  creativity through my work.
                 </p>
-                <p>Get in touch 👉🏼 Nesrine.hadboun@live.fr</p>
+                <p>
+                  If you would love to work with me, please get in
+                  touch 👉🏼 Nesrine.hadboun@live.fr
+                </p>
               </div>
               <div className='text-5xl flex justify-center gap-16 py-3 text-ecru'>
                 <a href='https://twitter.com/Codes_ness'>
@@ -85,8 +87,8 @@ export default function Home() {
               skills
             </h3>
             <p className='text-lg leading-8 text-gray-80'>
-              Here are in a few words the skills I acquired during my
-              last training with{' '}
+              Below, you will see some of my skills learned and used
+              in my last training as
               <span className='text-[#7f5539] '>
                 Scrimba Bootcamp{' '}
               </span>{' '}
