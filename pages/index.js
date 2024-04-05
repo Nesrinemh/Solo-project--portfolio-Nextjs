@@ -7,7 +7,7 @@ import profileimg from '../public/Design sans titre.png';
 import design from '../public/design.png';
 import code from '../public/code.png';
 import consulting from '../public/consulting.png';
-import projet2 from '../public/projet2.png';
+import projet1 from '../public/projet1.png';
 import projet3 from '../public/projet3.png';
 import projet4 from '../public/projet4.png';
 import projet5 from '../public/projet5.png';
@@ -60,8 +60,13 @@ export default function Home() {
                   creativity through my work.
                 </p>
                 <p>
-                  If you would love to work with me, please get in
-                  touch 👉🏼 Nesrine.hadboun@live.fr
+                  If you would love to work with me, please{' '}
+                  <a
+                    href='mailto:nesrine.hadboun@live.fr'
+                    className='bg-[#a39171] text-white px-4 py-2 rounded ml-8'
+                  >
+                    Get in touch
+                  </a>
                 </p>
               </div>
               <div className='text-5xl flex justify-center gap-16 py-3 text-ecru'>
@@ -88,7 +93,7 @@ export default function Home() {
             </h3>
             <p className='text-lg leading-8 text-gray-80'>
               Below, you will see some of my skills learned and used
-              in my last training as
+              in my last training at the{' '}
               <span className='text-[#7f5539] '>
                 Scrimba Bootcamp{' '}
               </span>{' '}
@@ -181,30 +186,37 @@ export default function Home() {
           <div className='flex flex-col  gap-10 lg:flex-row lg:flex-wrap bg-[#f5ebe0] p-10 mb-10 rounded-md'>
             <div className='basis-1/3  flex-1'>
               <p className='uppercase font-bold mb-2 text-gray-800'>
-                task tracker
+                Todo List
               </p>
               <Image
-                src={projet2}
+                src={projet1}
                 className='rounded-lg object-cover '
                 width={'100%'}
                 height={'100%'}
-                alt={projet2}
+                alt={projet1}
               />
               <p className='p-4 text-gray-800'>
                 {' '}
-                TO DO List App Using React.{' '}
+                Fullstack Todo List App Using React, Express.js,
+                PostgreSQL.{' '}
               </p>
               <div className='flex justify-between p-8'>
                 <div className='flex items-center'>
                   <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded  dark:text-red-600 border border-red-400'>
                     React
                   </p>
+                  <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded  dark:text-red-600 border border-red-400'>
+                    Express.js
+                  </p>
+                  <p className='bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded  dark:text-red-600 border border-red-400'>
+                    PostgreSQL
+                  </p>
                 </div>
                 <a
                   target='_blank'
                   rel='noreferrer'
-                  href='https://tasktracker-iota.vercel.app/'
-                  className='bg-[#a39171] hover:bg-red-500 text-white font-semibold px-4 py-2 rounded-md cursor-pointer'
+                  href='https://todolist-fullstack-asng.vercel.app/'
+                  className='bg-[#a39171] hover:bg-[#090806] text-white font-semibold px-4 py-2 rounded-md cursor-pointer'
                 >
                   View
                 </a>
@@ -236,7 +248,7 @@ export default function Home() {
                   target='_blank'
                   rel='noreferrer'
                   href='https://remarkable-dolphin-1f4414.netlify.app/'
-                  className='bg-[#a39171] hover:bg-red-500 text-white font-semibold px-4 py-2 rounded-md cursor-pointer'
+                  className='bg-[#a39171] hover:bg-[#090806] text-white font-semibold px-4 py-2 rounded-md cursor-pointer'
                 >
                   View
                 </a>
@@ -272,7 +284,7 @@ export default function Home() {
                   target='_blank'
                   rel='noreferrer'
                   href='https://dynamic-kitten-a71626.netlify.app/'
-                  className='bg-[#a39171] hover:bg-red-500 text-white font-semibold px-4 py-2 rounded-md cursor-pointer'
+                  className='bg-[#a39171] hover:bg-[#090806] text-white font-semibold px-4 py-2 rounded-md cursor-pointer'
                 >
                   View
                 </a>
@@ -311,7 +323,7 @@ export default function Home() {
                   target='_blank'
                   rel='noreferrer'
                   href='https://hinder-hyperisland.netlify.app/'
-                  className='bg-[#a39171] hover:bg-red-500 text-white font-semibold px-4 py-2 rounded-md cursor-pointer'
+                  className='bg-[#a39171] hover:bg-[#090806] text-white font-semibold px-4 py-2 rounded-md cursor-pointer'
                 >
                   View
                 </a>
@@ -347,7 +359,7 @@ export default function Home() {
                   target='_blank'
                   rel='noreferrer'
                   href='https://hyper-island-petfinder.vercel.app/'
-                  className='bg-[#a39171] hover:bg-red-500 text-white font-semibold px-4 py-2 rounded-md cursor-pointer'
+                  className='bg-[#a39171] hover:bg-[#090806] text-white font-semibold px-4 py-2 rounded-md cursor-pointer'
                 >
                   View
                 </a>
