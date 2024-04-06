@@ -50,10 +50,10 @@ export default function Home() {
                 <h2 className=' text-5xl py-2 text-[#b08968] font-medium md:text-6xl'>
                   Nesrine Hadboun
                 </h2>
-                <h3 className='text-2xl py-2 md:text-3xl'>
+                <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>
                   Frontend Developer .
                 </h3>
-                <p className='text-md py-5 leading-8  md:text-xl max-w-lg mx-auto'>
+                <p className='text-md py-5 leading-8  md:text-xl max-w-lg mx-auto dark:text-white'>
                   Hello! I am from France and I have lived in Sweden
                   since 2022 with my family. Previously, I have done
                   various jobs such as perfumery saleswoman, spa
@@ -62,11 +62,11 @@ export default function Home() {
                   frontend development and I am excited to show my
                   creativity through my work.
                 </p>
-                <p>
+                <p className='dark:text-white'>
                   If you would love to work with me, please
                   <a
                     href='mailto:nesrine.hadboun@live.fr'
-                    className='text-gray-800 border border-ecru px-2 ml-1 py-2 rounded'
+                    className='text-gray-800 border dark:text-white border-ecru px-2 ml-1 py-2 rounded'
                   >
                     Get in touch
                   </a>
@@ -91,18 +91,18 @@ export default function Home() {
         </section>
         <section>
           <div className='p-4 rounded-md'>
-            <h3 className='text-3xl font-bold py-3 uppercase tracking-wide'>
+            <h3 className='text-3xl font-bold py-3 uppercase tracking-wide dark:text-white'>
               skills
             </h3>
-            <p className='text-lg leading-8 text-gray-800'>
+            <p className='text-lg leading-8 text-gray-800 dark:text-white'>
               Below, you will see some of my skills learned and used
               in my last training at the{' '}
-              <span className='text-[#7f5539] '>
+              <span className='text-[#7f5539] dark:text-ecru '>
                 Scrimba Bootcamp{' '}
               </span>{' '}
               (got the certification in 2023) as well as other skills
               where I am currently training at{' '}
-              <span className='text-[#7f5539] '>
+              <span className='text-[#7f5539] dark:text-ecru '>
                 Hyper Island School
               </span>
               .
