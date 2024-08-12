@@ -36,7 +36,7 @@ export default function Home() {
                   target='_blank'
                   rel='noreferrer'
                   className='bg-ecru text-white px-4 py-2 rounded ml-8'
-                  href='https://drive.google.com/file/d/12_88leRtKCyY_BbKIIAogkgh8mkKL1Gl/view'
+                  href='https://drive.google.com/file/d/1WzE5C3WCdLaSSpDZDXSLR7H2pZ09Lvxt/view?usp=sharing'
                 >
                   Resume
                 </a>
